@@ -12,12 +12,33 @@ Quick and easy documentation system for tracking daily coding work, learning, an
    cd client && npm install && cd ..
    ```
 
-2. **Start the app**:
+2. **Build the React app**:
+   ```bash
+   cd client && npm run build && cd ..
+   ```
+
+3. **Start the server**:
    ```bash
    npm start
    ```
 
-3. **Open in browser**: http://localhost:3001
+4. **Open in browser**: http://localhost:3001
+
+### Development Mode (Optional)
+
+For faster development with hot-reload:
+
+1. **Terminal 1** - Start the backend API:
+   ```bash
+   npm start
+   ```
+
+2. **Terminal 2** - Start React dev server:
+   ```bash
+   cd client && npm start
+   ```
+
+3. **Open in browser**: http://localhost:3000 (React dev server with hot-reload)
 
 The app features:
 - 📅 **Calendar view** - See all your entries at a glance
