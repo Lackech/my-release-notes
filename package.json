@@ -3,10 +3,21 @@
   "version": "1.0.0",
   "description": "Easy system for tracking daily coding work and progress",
   "scripts": {
-    "new-daily": "cp templates/daily-log.md daily/$(date +%Y-%m-%d).md && echo 'Created daily/$(date +%Y-%m-%d).md'",
-    "new-learning": "echo 'Usage: cp templates/learning.md learnings/your-topic.md'"
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install"
   },
   "keywords": ["documentation", "progress-tracking", "learning"],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "marked": "^9.1.6",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
